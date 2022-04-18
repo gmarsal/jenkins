@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('hello'){
             steps {
-                sh(script 'docker images -a')
+                sh(script: 'docker images -a')
                 sh(script: """
                     cd docker/
                     docker images -a
